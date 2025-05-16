@@ -1,0 +1,7 @@
+services:
+    gb3-tools:
+        container_name: gb3-tools
+        image: ghcr.io/f-of-e/gb3-tools:latest
+        command: tail -f /dev/null
+        volumes:
+          - .:/gb3-resources

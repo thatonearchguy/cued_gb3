@@ -1,5 +1,5 @@
 DESIGN = hardwareblink
-GB3_ROOT = /gb3-resources
+GB3_ROOT = ${shell pwd}
 sail-nextpnr:
 	mkdir -p $(GB3_ROOT)/build
 	yosys -p "synth_ice40 -blif $(DESIGN).blif; write_json $(DESIGN).json" $(DESIGN).v
