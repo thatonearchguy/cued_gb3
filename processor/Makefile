@@ -1,5 +1,5 @@
 DESIGN	= sail
-GB3_ROOT = ${shell pwd}
+GB3_ROOT = /gb3-resources
 
 sail-nextpnr:
 	mkdir -p $(GB3_ROOT)/build
